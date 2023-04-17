@@ -1,4 +1,1146 @@
-<html>
-    <header></header>
-    <body>Test</body>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卓思國際 | JS Intl Com</title>
+
+    <meta name="apple-mobile-web-app-title" content="卓思國際">
+
+    <meta name="Subject" content="卓思國際">
+    <meta name="description" content="卓思國際 | 由卓思國際產品擁有負碳技術，通過「碳捕獲」供生物質產生能源和固碳儲存，用於現場廢棄生物質處理和生物質再生為綠色能源。專有的生物質氣化系統、能源耦合發電機模組及程自動化，專為企業和中小型社區設計。">
+    <meta name="author" content="卓思國際">
+    <meta name="robots" content="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- facebook -->
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="卓思國際">
+    <meta property="og:description" content="卓思國際 | 由卓思國際產品擁有負碳技術，通過「碳捕獲」供生物質產生能源和固碳儲存，用於現場廢棄生物質處理和生物質再生為綠色能源。專有的生物質氣化系統、能源耦合發電機模組及程自動化，專為企業和中小型社區設計。">
+    <meta property="og:site_name" content="卓思國際">
+    <meta property="og:image" content="images/img-og.png">
+    <meta property="og:image:alt" content="卓思國際">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="卓思國際 | 由卓思國際產品擁有負碳技術，通過「碳捕獲」供生物質產生能源和固碳儲存，用於現場廢棄生物質處理和生物質再生為綠色能源。專有的生物質氣化系統、能源耦合發電機模組及程自動化，專為企業和中小型社區設計。">
+    <meta name="twitter:title" content="卓思國際">
+    <meta name="twitter:image" content="images/img-og.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/touchicon_57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/touchicon_114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/touchicon_72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/touchicon_144x144.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="../images/touchicon_512x512.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="../images/touchicon_1024x1024.png">
+    
+    <link rel="stylesheet" href="../js/aos/aos.css?ver=1" />
+    <link rel="stylesheet" href="../bootstrap/scss/bootstrap.css?ver=1.0">
+    <link rel="stylesheet" href="../css/style.css?ver=1.0">
+</head>
+<body class="bg-body-tertiary">
+    <div class="wrap" data-bs-spy="scroll" data-bs-target="#navbarCont" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <nav class="navbar navbar-expand-lg fixed-top text-bg-light shadow" id="navbar">
+            <div class="container gap-1 flex-wrap">
+                <a class="navbar-brand mx-auto d-flex justify-content-center" href="#">
+                    <img src="../images/logo-light.svg" alt="卓思國際">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCont" aria-controls="navbarCont" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCont">
+                    <ul class="navbar-nav gap-3 align-items-center mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#about"><strong>關於我們</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#benfit"><strong>成本效益</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#advantage"><strong>卓思國際優勢</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#technology"><strong>生質能轉換技術</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#faq"><strong>綠色循環Q&A</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#product"><strong>產品概要</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#specification"><strong>規格選配</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#partner"><strong>合作夥伴</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link anchor-link" href="#contactus"><strong>聯絡我們</strong></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-sm btn-secondary rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="d-flex gap-1 align-items-center">
+                                    <i class="material-icons">language</i>
+                                    <span class="text-nowrap">中文</span>
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" arai-current="lang">中文</a></li>
+                                <li><a class="dropdown-item" href="../en/index.html">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="coid" id="#coid">
+            <div class="container container-section">
+                <div class="row g-0 justify-content-center">
+                    <div class="col-xl-9 col-lg-10">
+                        <div class="vstack" style="gap: 2rem;">
+                            <div class="d-flex coid-display">
+                                <div>
+                                    <img class="img-fluid" src="../images/coid-display-01.svg" draggable="flase">
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="../images/coid-display-02.svg" draggable="flase">
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="../images/coid-display-03.svg" draggable="flase">
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="../images/coid-display-04.svg" draggable="flase">
+                                </div>
+                            </div>
+                            <h2 class="m-0 fw-bold text-center coid-title text-shadow">
+                                <span class="text-king-lime">化腐朽為能源</span><span class="text-white"> - 廢棄物轉生物質能的循環經濟再利用</span>
+                            </h2>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-lg btn-king-lime rounded-pill shadow-lg" href="#about">
+                                    <span class="d-flex align-items-center">
+                                        <span>瞭解更多</span>
+                                        <i class="material-icons">keyboard_double_arrow_down</i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="about"></a>
+        <div class="container-fluid bg-white">
+            <div class="container container-section">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="px-4">
+                            <h2 class="title-type-1">
+                                <i class="material-icons text-success">energy_savings_leaf</i>
+                                <strong>關於我們</strong>
+                            </h2>
+                            <p>卓思國際運用先進、符合歐洲環評等級的氣化 (Gasification) 技術，將有機廢棄資源轉化為廢棄物衍生燃料 (Refuse Derived Fuel, RDF) 中具有較高熱值轉換效率的RDF-7合成燃氣 (Syngas)，再透過芬蘭製造的微型渦輪發電機 (Micro Gas Turbine Generator, MTG) 轉換成綠色電力提供穩定的再生能源。</p>
+                            <div class="p-gap"></div>
+                            <h3 class="text-secondary fw-bold" style="margin-bottom: 1.5rem;">生物質能為地球最大的資源之一<br>生質能源循環可兼顧環保與永續</h3>
+                            <p>生質能源的特性是「循環」—— 植物行光合作用將空氣中的二氧化碳固定下來，人類藉由新的科技可透過各種方法轉化為生質燃料，使用生物質燃料轉化為Syngas作為發電燃料，形成循環經濟。</p>
+                            <p>卓思國際的核心目標，將廢棄物資材轉換成能源，舉凡一般生活、工業、及農業等生質廢棄物，都是我們關注的可用資源。除此之外，卓思國際亦重視能源轉化過程符合環保規範。</p>
+                            <div class="p-gap"></div>
+                            <h3 class="text-secondary fw-bold" style="margin-bottom: 1.5rem;">分散式能資源中心深化運用<br>循環經濟模式遍地可開花</h3>
+                            <p>綜觀台灣所面臨的廢棄物處理狀況，卓思國際代理的廢棄物資源轉換系統，不僅可高效再利用有機廢棄物，也可將廢熱回收用來供熱CHP或製冷CCHP，能源轉換效率相對高。而能量轉換過程中的產生的碳黑、工業醋酸(木醋液)等，亦可提供工(農)業再利用，達成廢棄物皆資源化的目標。</p>
+                            <p>卓思國際擁有廢棄物能資源系統整合經驗及協助取得固定污染源處理執照 ; 在建置區域型微型發電廠方面採用特殊氣化技術將廢棄物轉換成RDF-7氣態廢棄物衍生燃料供給高效率的微渦輪機發電，可24小時運轉且容量因素可達80-90%，並將廢熱回收用來供暖或製冷，有別於其他使用固態廢棄物衍生燃料(Solid recovered fuel, SRF) 的電廠，則須先消耗能量將廢棄物製成SRF。</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 position-relative">
+                        <div class="sticky-top">
+                            <div class="card-group-h text-white about-card-group">
+                                <div class="card text-white" style="background-image: url(../images/about-card-bg-01.jpg);">
+                                    <div class="card-body p-4">
+                                        <div class="row gx-0 gy-2">
+                                            <div class="col-lg-6 col-md-7 col-sm-8">
+                                                <h3 class="title-type-2">
+                                                    <span class="bg-king-lime"></span>
+                                                    <strong>再生能源</strong>
+                                                </h3>
+                                                <p>原材料可以被再利用生成能源，用之不竭，不受能源短缺的影響，可促使未來家園與環境永續共生。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-white" style="background-image: url(../images/about-card-bg-02.jpg);">
+                                    <div class="card-body p-4">
+                                        <div class="row gx-0 gy-2">
+                                            <div class="col-lg-6 col-md-7 col-sm-8">
+                                                <h3 class="title-type-2">
+                                                    <span class="bg-king-lime"></span>
+                                                    <strong>回收利用</strong>
+                                                </h3>
+                                                <p class="card-text">運用專業技術及客製化服務，將廢棄有機資材轉化發電，進而達到轉廢為能資源循環最新氣化技術。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card text-white" style="background-image: url(../images/about-card-bg-03.jpg);">
+                                    <div class="card-body p-4">
+                                        <div class="row gx-0 gy-2">
+                                            <div class="col-lg-6 col-md-7 col-sm-8">
+                                                <h3 class="title-type-2">
+                                                    <span class="bg-king-lime"></span>
+                                                    <strong>循環經濟</strong>
+                                                </h3>
+                                                <p class="card-text">提升資源利用效率，減少生質廢棄物的產生，重視資源的再利用，創造廢棄物的新價值。</p>
+                                            </div>
+                                            <div class="col-10">
+                                                <p class="card-text small">垃圾處理一直是全球議題，目前台灣的焚化爐大多採用3、40年前的焚化技術，每日處理約1,000噸的混雜垃圾，對於環境的衝擊性相對大。一般焚化廠使用年限為20年，隨著台灣多數垃圾焚化廠使用年限屆滿，廢棄物未來的處置，是我們即將面對的問題。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="p-gap"></div>
+                        <div class="rounded-4 bg-star-sapphire">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-lg-6" style="padding: 1.5rem">
+                                    <div class="fs-5 text-white">相較於以火力、核能發電廠為主的集中式電網，我們的優勢在於設置微型分散式能資源轉換中心，可以協助成為台灣電力穩定備載支撐，還能就近處理生質廢棄物的去化，並減少長途運送的碳排放。</div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row g-0">
+                                        <div class="col position-relative">
+                                            <img class="px-2 img-fluid" src="../images/about-img-01.png" alt="傳統現況">
+                                            <span class="badge w-100 text-bg-dark rounded-pill position-absolute start-50 top-100 translate-middle fs-5">傳統現況</span>
+                                        </div>
+                                        <div class="col-3 position-relative">
+                                            <div class="vstack position-absolute start-50 translate-middle-x" style="z-index: 10;">
+                                                <h4 class="pt-0 pt-lg-3 text-center text-white fw-bold">廢棄物</h4>
+                                                <div class="btn-group">
+                                                    <a href="javascript: void(0);" class="btn btn-outline-light" style="--bs-btn-border-radius: 50rem;">
+                                                        <span class="text-nowrap">農業</span>
+                                                    </a>
+                                                    <a href="javascript: void(0);" class="btn btn-outline-light" style="--bs-btn-border-radius: 50rem;">
+                                                        <span class="text-nowrap">生活</span>
+                                                    </a>
+                                                    <a href="javascript: void(0);" class="btn btn-outline-light" style="--bs-btn-border-radius: 50rem;">
+                                                        <span class="text-nowrap">山林</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col position-relative">
+                                            <img class="px-2 img-fluid" src="../images/about-img-02.png" alt="微型分散式">
+                                            <span class="badge w-100 text-bg-dark rounded-pill position-absolute start-50 top-100 translate-middle fs-5">微型分散式</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="benfit"></a>
+        <div class="container-fluid bg-body-secondary">
+            <div class="container container-section" style="padding-top: 120px; padding-bottom: 120px;">
+                <div class="row g-3 align-items-center">
+                    <div class="col-xl-6 col-lg-4">
+                        <h2 class="title-type-1">
+                            <i class="material-icons text-success">energy_savings_leaf</i>
+                            <strong>成本效益</strong>
+                        </h2>
+                        <p>卓思國際預期第一期建置 400kW之發電設備一年最大發電量約為320萬度，依能源局最公布之109年度電力排碳係數0.502公斤CO<sub>2</sub>e換算，一年約可減少1,600公噸CO<sub>2</sub>排放，約為160公頃造林效益(6.25座大安森林公園)。</p>
+                        <p>卓思國際是採用回收生質廢棄物中的能量，第一期估算可以協助處理約2,000公噸/年的廢棄物，並由收取廢棄物處理費及躉售台電獲得收益。</p>
+                    </div>
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <div class="ratio ratio-1x1 text-king-lime opacity-50">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
+                                            </div>
+                                            <div class="w-100 h-100 position-absolute start-0 top-0">
+                                                <div class="ratio ratio-1x1">
+                                                    <div class="d-flex flex-column justify-content-between">
+                                                        <small class="mini">一年最大發電量</small>
+                                                        <small class="mini text-end">萬度</small>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <h1 class="display-5 m-0 text-center fw-bold text-secondary text-nowrap">320</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <div class="ratio ratio-1x1 text-king-lime opacity-50">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46C10.21 6.23 11.08 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"/></svg>
+                                            </div>
+                                            <div class="w-100 h-100 position-absolute start-0 top-0">
+                                                <div class="ratio ratio-1x1">
+                                                    <div class="d-flex flex-column justify-content-between">
+                                                        <small class="mini">每年減少</small>
+                                                        <small class="mini text-end">公噸CO<sub>2</sub>排放</small>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <h1 class="display-5 m-0 text-center fw-bold text-secondary text-nowrap">1<small>,</small>600</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <div class="ratio ratio-1x1 text-king-lime opacity-50">
+                                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><g><rect fill="none" height="24" width="24"/></g><g><g><polygon points="16,12 9,2 2,12 3.86,12 0,18 7,18 7,22 11,22 11,18 18,18 14.14,12"/><polygon points="20.14,12 22,12 15,2 12.61,5.41 17.92,13 16,13 15.97,13 19.19,18 24,18"/><rect height="3" width="4" x="13" y="19"/></g></g></svg>
+                                            </div>
+                                            <div class="w-100 h-100 position-absolute start-0 top-0">
+                                                <div class="ratio ratio-1x1">
+                                                    <div class="d-flex flex-column justify-content-between">
+                                                        <small class="mini">造林效益約為</small>
+                                                        <small class="mini text-end">公頃</small>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <h1 class="display-5 m-0 text-center fw-bold text-secondary text-nowrap">160</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="position-relative">
+                                            <div class="ratio ratio-1x1 text-king-lime opacity-50">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M22.17 9.17c0-3.87-3.13-7-7-7s-7 3.13-7 7c0 3.47 2.52 6.34 5.83 6.89V20H6v-3h1v-4c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v4h1v5h16v-2h-3v-3.88c3.47-.41 6.17-3.36 6.17-6.95zM4.5 11c.83 0 1.5-.67 1.5-1.5S5.33 8 4.5 8 3 8.67 3 9.5 3.67 11 4.5 11z"/></svg>
+                                            </div>
+                                            <div class="w-100 h-100 position-absolute start-0 top-0">
+                                                <div class="ratio ratio-1x1">
+                                                    <div class="d-flex flex-column justify-content-between">
+                                                        <small class="mini">造林效益約為</small>
+                                                        <small class="mini text-end">座大安森林公園</small>
+                                                    </div>
+                                                </div>
+                                                <div class="position-absolute top-50 start-50 translate-middle">
+                                                    <h1 class="display-5 m-0 text-center fw-bold text-secondary text-nowrap">6<small>.</small>25</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="advantage"></a>
+        <div class="container-fluid bg-body-tertiary">
+            <div class="container container-section" style="padding-top: 120px; padding-bottom: 120px;">
+                <div class="d-flex justify-content-center">
+                    <h2 class="title-type-1 align-items-center" style="margin-bottom: 3.75rem;">
+                        <i class="material-icons text-success">energy_savings_leaf</i>
+                        <strong>卓思國際優勢</strong>
+                    </h2>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="../images/img-heat.png" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-3 text-success fw-bold">我們的氣化技術</h3>
+                        <ol class="vstack gap-3">
+                            <li>生質廢棄物經熱裂解氣化，剩餘灰分極少。</li>
+                            <li>順流固定床(下吸式)氣化爐，焦油經過熱焦炭床處理後產出非常低。</li>
+                            <li>加厚碳層設計，氣化更完全。</li>
+                            <li>操作界面簡易，1~2 人即可控制整個自動化系統。</li>
+                            <li>不會排放煙道氣。</li>
+                            <li>RDF-7合成燃氣直接透過微渦輪機轉換成電力，比焚化爐以汽電共生方式發電更具效率。</li>
+                            <li>可創造社區及微型電廠的基礎。</li>
+                        </ol>
+                    </div>
+                </div>
+                <div style="height: 5rem;"></div>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="advantage-box">
+                            <div class="box-cont text-white">
+                                <h5 class="fw-bold mb-3">再生能源發電設備</h5>
+                                <p class="mb-0">卓思國際系統規劃發電效率達40% 綠電躉售電收入 (1,200kWh)估計約為 NT$37,902,720元/年</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantage-box">
+                            <div class="box-cont text-white">
+                                <h5 class="fw-bold mb-3">廢棄物再利用資格</h5>
+                                <p class="mb-0">行政院環境保護署「共通性事業廢棄物再利用管理辦法」 經濟部「事業廢棄物再利用管理辦法」 經申請再利用檢核後取得再利用機構資格收取處理費，並做為微渦輪發電氣體燃料</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="advantage-box">
+                            <div class="box-cont text-white">
+                                <h5 class="mt-auto fw-bold mb-3">固定汙染源申報</h5>
+                                <p class="mb-0">行政院環境保護署「電力設施空氣污染物排放標準」之氣渦輪機組定義 可符合空氣污染管制要求，包括：粒狀污染物(10mg/Nm^3)、硫氧化物(8ppm)、氮氧化物(10ppm)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="technology"></a>
+        <div class="container-fluid technology">
+            <div class="container container-section">
+                <div class="d-flex justify-content-center">
+                    <h2 class="title-type-1" style="margin-bottom: 5rem;">
+                        <i class="material-icons text-king-lime">energy_savings_leaf</i>
+                        <strong class="text-white">生質能轉換技術</strong>
+                    </h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 col-auto techno-row">
+                        <div class="d-flex flex-column flex-xl-row">
+                            <div class="col-xl col-auto techno-box">
+                                <div class="card border-0 h-100" style="--bs-card-spacer-x: 2.375rem; --bs-card-spacer-y: 2.375rem;">
+                                    <div class="card-body">
+                                        <div class="row" style="--bs-gutter-x: 1.5rem; --bs-gutter-y: 1.5rem;">
+                                            <div class="col-xl-12 col-4">
+                                                <div class="mx-auto ratio ratio-1x1" style="width: 66px;">
+                                                    <div class="rounded-circle border border-3 border-success d-flex align-items-center justify-content-center">
+                                                        <i class="material-icons text-success fs-2">lunch_dining</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-4">
+                                                <div class="mx-auto ratio ratio-1x1" style="width: 66px;">
+                                                    <div class="rounded-circle border border-3 border-success d-flex align-items-center justify-content-center">
+                                                        <i class="material-icons text-success fs-2">grass</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-4">
+                                                <div class="mx-auto ratio ratio-1x1" style="width: 66px;">
+                                                    <div class="rounded-circle border border-3 border-success d-flex align-items-center justify-content-center">
+                                                        <i class="material-icons text-success fs-2">recycling</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-bg-secondary text-center">殘留物、廢棄生物質</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-auto" style="width: 84px; height: 52px;"></div>
+                            <div class="col-xl-3 col-auto techno-box">
+                                <div class="card border-0 h-100" style="--bs-card-spacer-x: 2.375rem; --bs-card-spacer-y: 2.375rem;">
+                                    <div class="card-body pb-0">
+                                        <div class="d-flex aling-items-bottom justify-content-center h-100">
+                                            <img class="img-fluid" src="../images/gasification.svg" alt="氣化設備" draggable="false">
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-bg-secondary text-center">氣化設備</div>
+                                </div>
+                                <div class="techno-arrow"></div>
+                            </div>
+                            <div class="col-xl-auto" style="width: 84px; height: 52px;"></div>
+                            <div class="col-xl">
+                                <div class="d-flex flex-xl-column flex-row justify-content-between h-100">
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <i class="material-icons text-success" style="font-size: 4.25rem;">local_fire_department</i>
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">合成燃氣</div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                    <div style="width: 52px;"></div>
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <i class="material-icons text-success" style="font-size: 4.25rem;">hub</i>
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">生物碳</div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-auto" style="width: 84px; height: 52px;"></div>
+                            <div class="col-xl">
+                                <div class="d-flex flex-xl-column flex-row justify-content-between h-100">
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <img src="../images/engine.svg" alt="發電產熱機組" style="width: 4.25rem;" draggable="false">
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">發電產熱機組</div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                    <div style="width: 52px;"></div>
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <img src="../images/hay.svg" alt="有機養料回歸自然" style="width: 4.25rem;" draggable="false">
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">有機養料回歸自然</div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-auto" style="width: 84px; height: 52px;"></div>
+                            <div class="col-xl">
+                                <div class="d-flex flex-xl-column justify-content-between h-100">
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <i class="material-icons text-success" style="font-size: 4.25rem;">battery_charging_full</i>
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">再生能源</div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                    <div style="width: 52px;"></div>
+                                    <div class="techno-box">
+                                        <div class="card border-0" style="padding-top: 0.75rem;">
+                                            <div class="card-body d-flex align-items-center justify-content-center">
+                                                <img src="../images/co2tank.svg" alt="封存CO2" style="width: 4.25rem;" draggable="false">
+                                            </div>
+                                            <div class="card-footer px-0 text-bg-secondary text-center text-nowrap">封存CO<sub>2</sub></div>
+                                        </div>
+                                        <div class="techno-arrow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="faq"></a>
+        <div class="container-fluid bg-body-secondary">
+            <div class="container container-section">
+                <div class="d-flex justify-content-center">
+                    <h2 class="title-type-1 align-items-center" style="margin-bottom: 3.75rem;">
+                        <i class="material-icons text-success">energy_savings_leaf</i>
+                        <strong>綠色循環Q&A</strong>
+                    </h2>
+                </div>
+                <div class="vstack gap-4">
+                    <div class="faq-group row g-0">
+                        <div class="faq-title col-1 text-bg-success bg-gradient">
+                            <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+                                <h4 class="m-0 fw-bold">燃料</h4>
+                            </div>
+                        </div>
+                        <div class="faq-list col">
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ1-1" aria-expanded="false" aria-controls="collapseFAQ1-1">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>蘊含生物質能的原料有哪些？</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ1-1">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        生物質能技術是利用有機物質來生產能量，含有機物質的一般廢棄物、農業廢棄物及事業廢棄物等，原則上都可以作為發電廠發電的原料。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ1-2" aria-expanded="false" aria-controls="collapseFAQ1-2">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>固體再生燃料 (SRF)</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ1-2">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        指以具適燃性之廢棄物做為燃料，經過分選符合固體再生燃料品質標準者。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ1-3" aria-expanded="false" aria-controls="collapseFAQ1-3">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>廢棄物衍生燃料 (RDF)</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ1-3">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        指利用物理或熱化學等方法把將都市垃圾、一般事業廢棄物及農業廢棄物等廢棄物，藉由破碎、分選、乾燥、裂解、氣化及均質化等處理，轉化成性質均一的燃料。依據廢棄物處理程序的不同，分為RDF-1~7個種類等級，燃料的種類等級越高，代表能量利用的效率愈高。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group row g-0">
+                        <div class="faq-title col-1 text-bg-success bg-gradient" style="--bs-bg-opacity: .95;">
+                            <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+                                <h4 class="m-0 fw-bold">技術</h4>
+                            </div>
+                        </div>
+                        <div class="faq-list col">
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ2-1" aria-expanded="false" aria-controls="collapseFAQ2-1">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>氣化技術</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ2-1">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        卓思國際通過控制物料在高於1100度的溫度下有限供氧燃燒，與氧氣和水發生反應，把含碳的原料轉換成一氧化碳、氫氣及甲烷的特殊技術。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ2-2" aria-expanded="false" aria-controls="collapseFAQ2-2">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>熱電聯產 (Cogeneration, Combined Heat and Power, CHP)</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ2-2">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        因大多數單獨的電力生產，不可能將所有的熱能轉換成電能，略多於一半的熱量將會成為廢熱，並通過冷卻塔或煙道氣等方式排放到自然環境中。在熱電聯產中，會再利用約30%的廢熱於工業，使燃料的效率提高。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ3-3" aria-expanded="false" aria-controls="collapseFAQ3-3">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>冷熱電聯產 (Combined Cooling Heating and Power, CCHP)</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ3-3">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        卓思國際運用能量梯級利用的概念，將發電、製冷及制熱系統化，使用溫度較高較多熱能的廢熱用來發電，溫度較低較少熱能的廢熱用來供熱或製冷。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group row g-0">
+                        <div class="faq-title col-1 text-bg-success bg-gradient" style="--bs-bg-opacity: .9;">
+                            <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+                                <h4 class="m-0 fw-bold">發電</h4>
+                            </div>
+                        </div>
+                        <div class="faq-list col">
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ3-1" aria-expanded="false" aria-controls="collapseFAQ3-1">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>熱裂解氣化發電會產生噪音或戴奧辛？</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ3-1">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        電廠運作產生音量低於行政院環保署噪音管制標準；戴奧辛產生量遠低於行政院環保署管制標準。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ3-2" aria-expanded="false" aria-controls="collapseFAQ3-2">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>熱裂解氣化發電會對水或土壤產生污染？</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ3-2">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        電廠為零排放、零污染之循環使用流程，同時若達到ph4.6濃度時會產出通過TCLP重金屬檢測之工業用木醋液初階產品。氣化過程當中會產生鹼性之灰份，為性質優良之檢基土壤改良劑。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-group row g-0">
+                        <div class="faq-title col-1 text-bg-success bg-gradient" style="--bs-bg-opacity: .85;">
+                            <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+                                <h4 class="m-0 fw-bold">發電</h4>
+                            </div>
+                        </div>
+                        <div class="faq-list col">
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ4-1" aria-expanded="false" aria-controls="collapseFAQ4-1">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>再生能源電能躉購費率計算</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ4-1">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        111 年度 事業廢棄物發電躉購費率為3.9482元/度，農業廢棄物發電躉購費率為5.1407元/度。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button type="button" class="btn w-100 border-0" data-bs-toggle="collapse" data-bs-target="#collapseFAQ4-2" aria-expanded="false" aria-controls="collapseFAQ4-2">
+                                    <span class="d-flex w-100 justify-content-between align-items-center fs-5">
+                                        <span>生產過程中的副產物如何應用？</span>
+                                        <span>
+                                            <i class="material-icons more">expand_more</i>
+                                            <i class="material-icons less">expand_less</i>
+                                        </span>
+                                    </span>
+                                </button>
+                                <div class="collapse" id="collapseFAQ4-2">
+                                    <div class="faq-ans bg-body-tertiary rounded">
+                                        高溫氣化的副產物主要碳黑、工業醋酸(木醋液)。木醋液在農業上具有殺菌、治蟲、抗病、提高水和土壤有益微生物活性、促進作物生長等作用。碳黑已廣泛應用在塑料、油墨塗料、導電及橡膠工業。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="product"></a>
+        <div class="container-fluid bg-white">
+            <div class="container container-section">
+                <div class="d-flex justify-content-center">
+                    <h2 class="title-type-1 align-items-center" style="margin-bottom: 3.75rem;">
+                        <i class="material-icons text-success">energy_savings_leaf</i>
+                        <strong>產品概要</strong>
+                    </h2>
+                </div>
+                <div class="row justify-content-center" style="margin-bottom: 2.75rem;">
+                    <div class="col-lg-6 col-md-7">
+                        <p>由卓思國際產品擁有負碳技術，通過「碳捕獲」供生物質產生能源和固碳儲存，用於現場廢棄生物質處理和生物質再生為綠色能源。</p>
+                        <p>專有的生物質氣化系統、能源耦合發電機模組及程自動化，專為企業和中小型社區設計。</p>
+                        <p class="d-flex gap-2 align-items-center">
+                            <strong>負碳技術</strong>
+                            <span style="width: 14px;">
+                                <svg id="paranthesesSvg" data-name="parantheses" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 48"><path fill="currentColor" d="M13.6,45C11,45,9,44.44,7.68,43.31a6,6,0,0,1-2-4.81V30.26a6.42,6.42,0,0,0-1.2-4.33C3.69,25,2.33,24.58.4,24.58V23.42c1.93,0,3.29-.43,4.1-1.3s1.2-2.33,1.2-4.38V9.5a6,6,0,0,1,2-4.81C9,3.56,11,3,13.6,3V4.2a7.78,7.78,0,0,0-5,1.33A5.23,5.23,0,0,0,7,9.79v8.14A8.63,8.63,0,0,1,6.16,22a3.91,3.91,0,0,1-3,2v.1a3.91,3.91,0,0,1,3,2A8.63,8.63,0,0,1,7,30.07v8.28a5,5,0,0,0,1.59,4.12,7.78,7.78,0,0,0,5,1.33Z"/></svg>
+                            </span>
+                            <span>
+                                生物質產生能源<br>
+                                固碳儲存
+                            </span>
+                        </p>
+                        <p>使用殘留和廢棄生物質轉化為綠色能源，可用於提供電力及熱能，並可以固化形式封存 CO<sub>2</sub>，除了可以做為生物碳等有機養料回歸自然，更可以形成負碳循環減少溫室氣體排放。</p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg order-0">
+                        <div class="row g-3 justify-content-center">
+                            <div class="col-lg-12 col-6 synopsis-box input-layer-1">
+                                <div class="card bg-body-tertiary h-100 ms-4 ms-lg-0">
+                                    <div class="d-flex justify-content-center">
+                                        <div style="height: 138px;">
+                                            <img class="card-img-top" src="../images/product-input-01.png" style="height: 100%; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">生物質投入</h5>
+                                        <ul class="card-text ps-3">
+                                            <li>木屑</li>
+                                            <li>堅果殼</li>
+                                            <li>壓塊有機廢物</li>
+                                        </ul>
+                                    </div>
+                                    <div class="position-absolute end-0 top-0 translate-middle-y" style="margin-top: -0.5rem; margin-right: -0.5rem;">
+                                        <div class="d-flex">
+                                            <img class="rounded-circle border" src="../images/input-round-01.png" style="margin-left: -0.75rem; width: 3rem;">
+                                            <img class="rounded-circle border" src="../images/input-round-02.png" style="margin-left: -0.75rem; width: 3rem;">
+                                            <img class="rounded-circle border" src="../images/input-round-03.png" style="margin-left: -0.75rem; width: 3rem;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow input middle right"></div>
+                            </div>
+                            <div class="col-lg-12 col-6 synopsis-box input-layer-1">
+                                <div class="card bg-body-tertiary h-100 ms-4 ms-lg-0">
+                                    <div class="d-flex justify-content-center">
+                                        <div style="height: 138px;">
+                                            <img src="../images/product-input-02.png" style="height: 100%; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">氣化</h5>
+                                        <p class="card-text"><span class="text-nowrap">多重下吸式設計</span><br><span class="text-nowrap">固定床式反應器</span></p>
+                                    </div>
+                                    <div class="card-footer bg-body-tertiary small">在有限的供氧下，900 °C 的熱化學反應(爐心溫度)，將固體生物質轉化為生物合成氣和生物碳。</div>
+                                </div>
+                                <div class="graphic-arrow input top right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="card bg-body-tertiary">
+                                    <img class="card-img" src="../images/product-machine.png">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-6 synopsis-box output-layer-1">
+                                <div class="card text-bg-success h-100 me-3 me-sm-0">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">合成燃氣 600 °</h5>
+                                        <p class="m-0 card-text">平均成分：</p>
+                                        <ul class="card-text ps-3">
+                                            <li>一氧化碳 19/22%</li>
+                                            <li>氫氣 15/18%</li>
+                                            <li>甲烷 1/4%</li>
+                                            <li>二氧化碳 9/12%</li>
+                                            <li>氮氣 49/53%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow output"></div>
+                            </div>
+                            <div class="col-sm-4 col-6 synopsis-box">
+                                <div class="card text-bg-success h-100 ms-3 ms-sm-0">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">生物碳</h5>
+                                        <p class="m-0 card-text">自動提取和收集</p>
+                                        <ul class="card-text ps-3">
+                                            <li>生物質投質量的5%</li>
+                                            <li>負碳排技術 (碳封存)</li>
+                                            <li>強力土壤改良和基質過濾</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow output"></div>
+                            </div>
+                            <div class="col-sm-4 col-12 synopsis-box layer-2">
+                                <div class="card text-bg-success h-100">
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">合成燃氣冷卻和純化</h5>
+                                        <p class="m-0 card-text">灰份和冷凝水移除：</p>
+                                        <div class="d-flex justify-content-end float-end">
+                                            <div style="height: 138px;">
+                                                <img src="../images/product-output-01.png" style="height: 100%; object-fit: contain;">
+                                            </div>
+                                        </div>
+                                        <ul class="card-text ps-3">
+                                            <li>氣旋</li>
+                                            <li>熱交換器</li>
+                                            <li>生物質過濾器</li>
+                                            <li>洗滌器</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow output"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg order-1 order-lg-2">
+                        <div class="row g-3">
+                            <div class="col-lg-12 col-6 synopsis-box input-layer-2">
+                                <div class="card bg-body-tertiary h-100 me-4 me-lg-0">
+                                    <div class="d-flex justify-content-center">
+                                        <div style="height: 138px;">
+                                            <img class="card-img-top" src="../images/product-input-03.png" style="height: 100%; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">自動化控制面板</h5>
+                                        <p class="card-text">現場和遠端監看功能<br>控制和電網連接</p>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow input middle left"></div>
+                            </div>
+                            <div class="col-lg-12 col-6 synopsis-box input-layer-2">
+                                <div class="card bg-body-tertiary h-100 me-4 me-lg-0">
+                                    <div class="d-flex justify-content-center">
+                                        <div style="height: 138px;">
+                                            <img class="card-img-top" src="../images/product-input-04.png" style="height: 100%; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold">熱電聯產</h5>
+                                        <p class="card-text">雙或單發電機組 + 熱交換器</p>
+                                    </div>
+                                    <div class="card-footer bg-body-tertiary small">
+                                        <ul class="card-text ps-3 pb-4 pb-lg-0">
+                                            <li>三相電力</li>
+                                            <li>熱水 (80/85°C)</li>
+                                            <li>從引擎和煙道氣中回收熱能(CHP)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="graphic-arrow input top left"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end" style="margin-top: 1.5rem;">
+                    <div class="px-3 small">圖示【歐盟專利】【美國專利】【企業適用】【中小型社區適用】</div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="specification"></a>
+        <div class="container-fluid bg-body-tertiary">
+            <div class="container container-section">
+                <div class="d-flex justify-content-center">
+                    <h2 class="title-type-1 align-items-center" style="margin-bottom: 3.75rem;">
+                        <i class="material-icons text-success">energy_savings_leaf</i>
+                        <strong>規格選配</strong>
+                    </h2>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-3 col-6">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="../images/specification-img-01.png" alt="電廠模組 (Power Skid+)">
+                                <div class="m-2 position-absolute end-0 bottom-0" style="width: calc(100% / 3);">
+                                    <img class="img-fluid img-thumbnail" src="../images/specification-img-01-1.png" alt="電廠模組 (Power Skid+)">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="m-0 fw-bold">電廠模組 <small>(Power Skid+)</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="../images/specification-img-02.png" alt="熱電聯產模組 (CHP)">
+                            <div class="card-body">
+                                <h5 class="m-0 fw-bold">熱電聯產模組 <small>(CHP)</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="../images/specification-img-03.png" alt="熱力模組 (HEAT)">
+                                <div class="m-2 position-absolute end-0 bottom-0" style="width: calc(100% / 3);">
+                                    <img class="img-fluid img-thumbnail" src="../images/specification-img-03-1.png" alt="電廠模組 (Power Skid+)">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="m-0 fw-bold">熱力模組 <small>(HEAT)</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="card h-100">
+                            <div class="position-relative">
+                                <img class="card-img-top" src="../images/specification-img-04.png" alt="生物質轉換模組 (GAS Unit)">
+                                <div class="m-2 position-absolute end-0 bottom-0" style="width: calc(((100% / 3) * 2) + 0.25rem);">
+                                    <div class="d-flex gap-1">
+                                        <span>
+                                            <img class="img-fluid img-thumbnail" src="../images/specification-img-04-1.png" alt="生物質轉換模組 (GAS Unit)">
+                                        </span>
+                                        <span>
+                                            <img class="img-fluid img-thumbnail" src="../images/specification-img-04-2.png" alt="生物質轉換模組 (GAS Unit)">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="m-0 fw-bold">生物質轉換模組 <small>(GAS Unit)</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-md-none">
+                        <div class="card text-bg-dark" style="margin-top: 2.75rem;">
+                            <img class="card-img-top" src="../images/specification-team.jpg">
+                            <div class="card-body">
+                                <h5 class="m-0 d-flex flex-wrap">
+                                    <span>專業團隊依據不同生物質、</span>
+                                    <span>安裝地點進行客製規劃、</span>
+                                    <span>設備安裝、建廠、調節達成最佳狀態。</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-none d-md-block">
+                        <div class="card text-bg-dark" style="margin-top: 2.75rem;">
+                            <img src="../images/specification-team.jpg" class="card-img">
+                            <div class="card-img-overlay p-0">
+                                <div class="row g-0 h-100 justify-content-end align-items-center">
+                                    <div class="col-lg-4 col-6 h-100 text-bg-dark p-3 rounded-end bg-opacity-75">
+                                        <div class="d-flex h-100 align-items-center">
+                                            <h5 class="m-0 d-flex flex-wrap">
+                                                <span>專業團隊依據不同生物質、</span>
+                                                <span>安裝地點進行客製規劃、</span>
+                                                <span>設備安裝、建廠、調節達成最佳狀態。</span>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="anchor" id="partner"></a>
+        <div class="container-fluid bg-body-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 partner-bg">
+                        <div class="container-section h-100">
+                            <div class="d-flex justify-content-center">
+                                <h1 class="title-type-1 align-items-center" style="margin-bottom: 3.75rem;">
+                                    <i class="material-icons text-king-lime">energy_savings_leaf</i>
+                                    <strong class="text-white">合作夥伴</strong>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="container-section h-100">
+                            <div class="px-3">
+                                <div class="row" style="--bs-gutter-x: 2rem; --bs-gutter-y: 2rem;">
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-3">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-3">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <div class="ratio ratio-1x1">
+                                            <div class="rounded-circle bg-secondary"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --><!-- 暫時隱藏 -->
+        <a class="anchor" id="contactus"></a>
+        <div class="container-fluid text-bg-success">
+            <div class="container px-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 col-md-5 col-sm-6">
+                        <div class="h-100" style="padding: 1.5rem 0;">
+                            <div class="contact-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.209192610771!2d120.63690150000001!3d24.164395199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693df19ad0ffff%3A0x5aae5218559ed541!2zNDA35Y-w5Lit5biC6KW_5bGv5Y2A5biC5pS_5YyX5LqM6LevMjgy6Jmf!5e0!3m2!1szh-TW!2stw!4v1681454789835!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-sm-6">
+                        <div class="d-flex flex-column h-100" style="padding: 1.5rem;">
+                            <div class="vstack gap-3 justify-content-center">
+                                <h2 class="title-type-1 align-items-center mb-3">
+                                    <i class="material-icons text-king-lime">energy_savings_leaf</i>
+                                    <strong class="text-white">聯絡我們</strong>
+                                </h2>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <i class="material-icons">location_on</i>
+                                    <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="https://goo.gl/maps/61oRiBfvNL4fnrBu5" target="_blank">台中市西屯區市政北二路282號19樓之5</a>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <i class="material-icons">email</i>
+                                    <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="mailto:support@jsicglobal.com">support@jsicglobal.com</a>
+                                </div>
+                                <div class="d-flex gap-1 align-items-center">
+                                    <i class="material-icons">call</i>
+                                    <a class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="tel:04-2254-4328">04-2254-4328</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-bg-secondary">
+            <div class="container">
+                <div class="p-3 d-flex justify-content-center">
+                    <small>Copyright © 2023 JS International Co., Ltd., All Right Reserved.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a class="shadow" href="#" id="ToTop" title="回頂端"><i class="material-icons fs-5 text-success">arrow_drop_up</i></a>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="../js/aos/aos.js"></script>
+    <script src="../js/main.js?ver=1.0"></script>
+</body>
 </html>
