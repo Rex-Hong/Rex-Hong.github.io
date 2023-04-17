@@ -230,6 +230,8 @@ a, button{
 .card-group-h{
     display: flex;
     flex-direction: column;
+    @include bg-c(var(--bs-body-color));
+    @include bdr-r(var(--bs-border-radius-xl));
     .card{
         --bs-card-border-radius: var(--bs-border-radius-xl);
         --bs-card-inner-border-radius: calc(var(--bs-border-radius-xl) - (var(--bs-border-width)));
@@ -289,6 +291,14 @@ div{
         @include pos(relative);
     }
 }
+@keyframes technoArrowH{
+    0%    {background-position: -84px 0}
+    100%  {background-position: 84px 0}
+}
+@keyframes technoArrowV{
+    0%    {background-position: 0 -52px}
+    100%  {background-position: 0 52px}
+}
 .techno-box{
     @include pos(relative);
     .techno-arrow{
@@ -297,8 +307,9 @@ div{
         align-items: center;
         width: 84px;
         height: 1.5rem;
-        @include pos(absolute);
         @include bg-i(linear-gradient(to right, rgba(204, 216, 0, 1), rgba(204, 216, 0, 0.5)));
+        animation: technoArrowH 4s linear infinite;
+        @include pos(absolute);
         transform: translateX(-100%) translateY(-50%);
         left: 0;
         top: 50%;
@@ -415,6 +426,12 @@ div{
     @include bg-pn(center, center);
 }
 
+.contactus{
+    @include bg-i(url(../images/bg-contactus.png));
+    @include bg-r(no-repeat);
+    @include bg-s(contain);
+    @include bg-px(100%);
+}
 .contact-map{
     height: 100%;
     min-height: 240px;
@@ -433,6 +450,31 @@ div{
     }
 }
 
+.carousel-indicators{
+    &.cust-indicators{
+        @include m(0.5rem);
+        gap: 0.25rem;
+        left: auto;
+        z-index: 100;
+        [data-bs-target]{
+            display: flex;
+            box-sizing: border-box;
+            @include m(0);
+            @include p(0.25rem);
+            @include wh-box(3rem);
+            @include bdr(var(--bs-border-color), solid, 1px);
+            opacity: 1;
+            text-indent: 0;
+            @include bdr-r(0.25rem);
+            @include bg-i(var(--bg-img));
+            @include ts-eio(0.2s, 0.2s);
+            &.active{
+                --bs-border-color: var(--bs-warning);
+            }
+        }
+    }
+}
+
 #ToTop{
     display: flex;
     justify-content: center;
@@ -441,15 +483,20 @@ div{
     @include wh-box(2.625rem);
     @include bdr-r(1.3125rem);
     @include bg-c(#fff);
+    color: var(--bs-success);
     @include pos(fixed);
     right: 0.75rem;
     bottom: 1.5rem;
-    z-index: 100;
+    z-index: 5000;
     opacity: 0;
     pointer-events: none;
     &.show{
         opacity: 1;
         pointer-events: auto;
+    }
+    &:hover, &:active{
+        @include bg-c(var(--bs-light));
+        color: var(--bs-success-text-emphasis);
     }
 }
 
@@ -461,6 +508,7 @@ div{
             width: 1.5rem;
             height: 52px;
             @include bg-i(linear-gradient(to bottom, rgba(204, 216, 0, 1), rgba(204, 216, 0, 0.5)));
+            animation: technoArrowV 4s linear infinite;
             transform: translateX(-50%) translateY(-100%);
             left: 50%;
             top: 0;
@@ -469,10 +517,6 @@ div{
             }
         }
     }
-}
-
-/*--max-width: 991.98px--*/
-@include devLLess{
     .navbar{
         .navbar-collapse{
             .navbar-nav{
@@ -488,6 +532,11 @@ div{
             }
         }
     }
+}
+
+/*--max-width: 991.98px--*/
+@include devLLess{
+    
     .synopsis-box{
         .graphic-arrow{
             &.input{
@@ -536,6 +585,14 @@ div{
 
 /*--max-width: 575.98px--*/
 @include devSLess{
+    .coid{
+        .coid-display{
+            @include pr(1.25rem);
+            div{
+                margin-right: -1.25rem;
+            }
+        }
+    }
     .synopsis-box{
         &.output-layer-1{
             &:after{

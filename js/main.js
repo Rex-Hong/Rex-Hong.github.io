@@ -1,18 +1,4 @@
 $(document).ready(function() {
-    //navbar
-    var stickyNavTop = $('#navbar').offset().top;
-	var stickyNav = function(){
-		var scrollTop = $(window).scrollTop();
-		if (scrollTop > stickyNavTop) {
-			$('#navbar').addClass('bg-opacity-75');
-		} else {
-			$('#navbar').removeClass('bg-opacity-75');
-		}
-	};
-	stickyNav();
-	$(window).scroll(function() {
-		stickyNav();
-	});
 
     //anchor
     $('.anchor').click(function(){
@@ -55,4 +41,8 @@ $(document).ready(function() {
 			}, 700);
 		});
 	}
+
+	//tooltip
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 });
