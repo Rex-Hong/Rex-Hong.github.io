@@ -1,0 +1,207 @@
+@mixin devXxlUp{
+    @media (min-width: 1400px){
+        @content;
+    }
+}
+@mixin devXxlLess{
+    @media (max-width: 1399.98px){
+        @content;
+    }
+}
+@mixin devXlUp{
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+@mixin devXlLess{
+    @media (max-width: 1199.98px){
+        @content;
+    }
+}
+@mixin devLLess{
+    @media (max-width: 991.98px){
+        @content;
+    }
+}
+@mixin devLUp{
+    @media (min-width: 992px){
+        @content;
+    }
+}
+@mixin devMUp{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin devMLess{
+    @media (max-width: 767.98px){
+        @content;
+    }
+}
+@mixin devLUp{
+    @media (min-width: 992px){
+        @content;
+    }
+}
+@mixin devLLess{
+    @media (max-width: 991.98px){
+        @content;
+    }
+}
+@mixin devSUp{
+    @media (min-width: 576px){
+        @content;
+    }
+}
+@mixin devSLess{
+    @media (max-width: 575.98px){
+        @content;
+    }
+}
+@mixin ts-eio($ts-dur, $ts-del){
+    transition: all $ts-dur ease-in-out $ts-del;
+}
+@mixin bg($bg-all){
+    background: $bg-all;
+}
+@mixin bg-c($bg-color){
+    background-color: $bg-color;
+}
+@mixin bg-r($bg-repeat){
+    background-repeat: $bg-repeat;
+}
+@mixin bg-i($bg-image){
+    background-image: $bg-image;
+}
+@mixin bg-pn($bg-px, $bg-py){
+    background-position: $bg-px, $bg-py;
+}
+@mixin bg-px($bg-px){
+    background-position-x: $bg-px;
+}
+@mixin bg-py($bg-py){
+    background-position-y: $bg-py;
+}
+@mixin bg-sn($bg-size-n-x, $bg-size-n-y){
+    background-size: $bg-size-n-x $bg-size-n-y;
+}
+@mixin bg-s($bg-size){
+    background-size: $bg-size;
+}
+@mixin pos($position){
+    position: $position;
+}
+@mixin pseudo($display){
+    content: '';
+    display: $display;
+}
+@mixin bdr($color, $style, $width){
+    border: $color $style $width;
+}
+@mixin bdr-r($bdr-num){
+    border-radius: $bdr-num;
+}
+@mixin bdr-rn($bd-r-tl, $bd-r-tr, $bd-r-br, $bd-r-bl){
+    border-top-left-radius: $bd-r-tl;
+    border-top-right-radius: $bd-r-tr;
+    border-bottom-right-radius: $bd-r-br;
+    border-bottom-left-radius: $bd-r-bl;
+}
+@mixin bdr-c($bd-color){
+    border-color: $bd-color;
+}
+@mixin bdr-cn($bd-color-t, $bd-color-r, $bd-color-b, $bd-color-l){
+    border-top-color: $bd-color-t;
+    border-right-color: $bd-color-r;
+    border-bottom-color: $bd-color-b;
+    border-left-color: $bd-color-l;
+}
+@mixin bdr-w($bd-w-num){
+    border-width: $bd-w-num;
+}
+@mixin bdr-wn($bd-wt, $bd-wr, $bd-wb, $bd-wl){
+    border-top-width: $bd-wt;
+    border-right-width: $bd-wr;
+    border-bottom-width: $bd-wb;
+    border-left-width: $bd-wl;
+}
+@mixin bdr-s($bd-s){
+    border-style: $bd-s;
+}
+@mixin m($m-num){
+    margin: $m-num;
+}
+@mixin mg($mg-t-num, $mg-r-num, $mg-b-num, $mg-l-num){
+    margin: $mg-t-num $mg-r-num $mg-b-num $mg-l-num;
+}
+@mixin myx($m-y-num, $m-x-num){
+    margin: $m-y-num $m-x-num;
+}
+@mixin mt($m-t-num){
+    margin-top: $m-t-num;
+}
+@mixin mb($m-b-num){
+    margin-bottom: $m-b-num;
+}
+@mixin ml($m-l-num){
+    margin-left:  $m-l-num;
+}
+@mixin mr($m-r-num){
+    margin-right:  $m-r-num;
+}
+@mixin p($p-num){
+    padding: $p-num;
+}
+@mixin pyx($p-y-num, $p-x-num){
+    padding: $p-y-num $p-x-num;
+}
+@mixin pd($pd-t-num, $pd-r-num, $pd-b-num, $pd-l-num){
+    padding: $pd-t-num $pd-r-num $pd-b-num  $pd-l-num;
+}
+@mixin pt($p-t-num){
+    padding-top: $p-t-num;
+}
+@mixin pb($p-b-num){
+    padding-bottom: $p-b-num;
+}
+@mixin pl($p-l-num){
+    padding-left: $p-l-num;
+}
+@mixin pr($p-r-num){
+    padding-right: $p-r-num;
+}
+@mixin w-box($wlc-num){
+    display: -webkit-box;
+    -webkit-line-clamp: $wlc-num;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+@mixin o-fit($o-fit){
+    object-fit: $o-fit;
+}
+@mixin o-pos($o-pos-x, $o-pos-y){
+    object-position: $o-pos-x, $o-pos-y;
+}
+@mixin t-dec($t-dec){
+    text-decoration: $t-dec;
+}
+@mixin p-events($p-event){
+    pointer-events: $p-event;
+}
+@mixin linear-mask($linear-mask-t, $linear-mask-b){
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,$linear-mask-t), rgba(0,0,0,$linear-mask-b));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,$linear-mask-t), rgba(0,0,0,$linear-mask-b));
+}
+@mixin bd-filter-blur($bd-filter-blur){
+    backdrop-filter: blur($bd-filter-blur);
+    -webkit-backdrop-filter: blur($bd-filter-blur);
+}
+@mixin wh-box($size){
+    width: $size;
+    height: $size;
+}
+@mixin sq-box($ratio){
+    padding-bottom: $ratio;
+    width: 100%;
+    height: 0;
+}

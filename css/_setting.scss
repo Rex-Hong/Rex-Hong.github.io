@@ -1,0 +1,61 @@
+$variable-prefix:	--;
+
+$fonts: (
+	"ff-fontawesome": Font Awesome 5 Free,
+	"ff-material": Material Icons,
+) !default;
+:root {
+	// @each $color, $value in $colors {
+	// 	#{$variable-prefix}#{$color}: #{$value};
+	// }
+	@each $font, $value in $fonts {
+		#{$variable-prefix}#{$font}: '#{$value}';
+	}
+	--white-op95: rgba(255, 255, 255, .95);
+	--white-op90: rgba(255, 255, 255, .9);
+	--white-op85: rgba(255, 255, 255, .85);
+	--white-op80: rgba(255, 255, 255, .8);
+	--white-op75: rgba(255, 255, 255, .75);
+	--white-op70: rgba(255, 255, 255, .7);
+	--white-op65: rgba(255, 255, 255, .65);
+	--white-op60: rgba(255, 255, 255, .6);
+	--white-op55: rgba(255, 255, 255, .55);
+	--white-op50: rgba(255, 255, 255, .5);
+	--white-op45: rgba(255, 255, 255, .45);
+	--white-op40: rgba(255, 255, 255, .4);
+	--white-op35: rgba(255, 255, 255, .35);
+	--white-op30: rgba(255, 255, 255, .3);
+	--white-op25: rgba(255, 255, 255, .25);
+	--white-op20: rgba(255, 255, 255, .2);
+	--white-op15: rgba(255, 255, 255, .15);
+	--white-op10: rgba(255, 255, 255, .1);
+	--white-op05: rgba(255, 255, 255, .05);
+	--white-op00: rgba(255, 255, 255, 0);
+	--black-op95: rgba(0, 0, 0, .95);
+	--black-op90: rgba(0, 0, 0, .9);
+	--black-op85: rgba(0, 0, 0, .85);
+	--black-op80: rgba(0, 0, 0, .8);
+	--black-op75: rgba(0, 0, 0, .75);
+	--black-op70: rgba(0, 0, 0, .7);
+	--black-op65: rgba(0, 0, 0, .65);
+	--black-op60: rgba(0, 0, 0, .6);
+	--black-op55: rgba(0, 0, 0, .55);
+	--black-op50: rgba(0, 0, 0, .5);
+	--black-op44: rgba(0, 0, 0, .45);
+	--black-op40: rgba(0, 0, 0, .4);
+	--black-op35: rgba(0, 0, 0, .35);
+	--black-op30: rgba(0, 0, 0, .3);
+	--black-op25: rgba(0, 0, 0, .25);
+	--black-op20: rgba(0, 0, 0, .2);
+	--black-op15: rgba(0, 0, 0, .15);
+	--black-op10: rgba(0, 0, 0, .1);
+	--black-op05: rgba(0, 0, 0, .05);
+	--black-op00: rgba(0, 0, 0, 0);
+	--king-lime:           #b3d600;
+	--salty-thyme:         #97b400;
+	--star-sapphire:       #3b649f;
+	--ts-eio: all .2s ease-in-out .2s;
+    --tl-x:  translateX(-50%);
+    --tl-y:  translateY(-50%);
+    --tl-xy: translate(-50%, -50%);
+}
