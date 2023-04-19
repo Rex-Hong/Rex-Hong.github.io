@@ -50,13 +50,6 @@
   --tl-xy: translate(-50%, -50%);
 }
 
-html[lang=en-gb], html[lang=en-gb] body {
-  --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-html[lang=zh-TW], html[lang=zh-TW] body {
-  --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans TC", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 a, button {
   transition: all 0.2s ease-in-out 0.2s;
 }
@@ -436,6 +429,9 @@ div :has(.advantage-box):nth-of-type(3) .advantage-box {
   transform: var(--tl-y);
   top: 50%;
 }
+.synopsis-box .graphic-arrow.input.bottom, .synopsis-box > div .graphic-arrow.input.bottom {
+  bottom: 0;
+}
 .synopsis-box .graphic-arrow.input.top, .synopsis-box > div .graphic-arrow.input.top {
   top: 0;
 }
@@ -570,7 +566,7 @@ div :has(.advantage-box):nth-of-type(3) .advantage-box {
     right: 0;
     bottom: -2rem;
   }
-  .synopsis-box.input-layer-2 .graphic-arrow.input.top, .synopsis-box.input-layer-2 .graphic-arrow.input.middle {
+  .synopsis-box.input-layer-2 .graphic-arrow.input.top, .synopsis-box.input-layer-2 .graphic-arrow.input.middle, .synopsis-box.input-layer-2 .graphic-arrow.input.bottom {
     transform: var(--tl-x);
     top: auto;
     left: 50%;
@@ -594,6 +590,10 @@ div :has(.advantage-box):nth-of-type(3) .advantage-box {
   }
   .coid .coid-display div {
     margin-right: -1.25rem;
+  }
+  .technology {
+    background-attachment: inherit;
+    background-position: center, center;
   }
   .synopsis-box.output-layer-1:after {
     content: "";

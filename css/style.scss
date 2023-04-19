@@ -1,19 +1,6 @@
 @import 'setting';
 @import 'mixin';
 
-html{
-    &[lang='en-gb']{
-        &, body{
-            --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-    }
-    &[lang='zh-TW']{
-        &, body{
-            --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans TC", "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-    }
-}
-
 a, button{
     @include ts-eio(0.2s, 0.2s);
 }
@@ -402,6 +389,9 @@ div{
                     transform: var(--tl-y);
                     top: 50%;
                 }
+                &.bottom{
+                    bottom: 0;
+                }
                 &.top{
                     top: 0;
                 }
@@ -562,7 +552,7 @@ div{
         &.input-layer-2{
             .graphic-arrow{
                 &.input{
-                    &.top, &.middle{
+                    &.top, &.middle, &.bottom{
                         transform: var(--tl-x);
                         top: auto;
                         left: 50%;
@@ -592,6 +582,10 @@ div{
                 margin-right: -1.25rem;
             }
         }
+    }
+    .technology{
+        background-attachment: inherit;
+        @include bg-pn(center, center);
     }
     .synopsis-box{
         &.output-layer-1{
